@@ -1,0 +1,27 @@
+
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: azure;
+    line-height: 1.7;
+    font-family: "Lora", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr repeat(10, 1fr) 1fr;
+    grid-template-rows: 90px 100vh repeat(4, max-content);
+    
+}

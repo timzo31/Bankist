@@ -1,0 +1,36 @@
+.heading-1 {
+    font-size: 5rem;
+    font-family: "Lora";
+    font-weight: 700;
+    line-height: 1.5;
+    transform: skewX(-15deg);
+    margin: $margin-bt-heading;
+
+
+    &__lineargradient-skewed {
+        padding: 1rem 0;
+        background: linear-gradient(to bottom, rgba($color-primary, .8), rgba($color-secondary, .8));
+        
+    }
+}
+
+h1 {
+    transform: skewX(15deg);
+}
+
+.heading-2 {
+    font-size: 4rem;
+    font-family: "Lora", sans-serif;
+    font-weight: 500;
+}
+
+.heading-3 {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "Lora", sans-serif;
+    line-height: 1;
+
+    &--green {
+        color: $color-primary;
+    }
+}

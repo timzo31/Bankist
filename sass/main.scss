@@ -1,0 +1,19 @@
+//@import "https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,600;0,700;1,800&family=Roboto+Condensed:wght@300;400;700&display=swap";
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/navbar";
+@import "components/sections";
+@import "components/buttons";
+
+@import "layouts/header";
+
+@import "pages/home";
+

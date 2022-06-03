@@ -1,0 +1,43 @@
+.nav {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+        list-style: none;
+        display: flex;
+        
+
+        &:link,
+        &:active {
+            color: $color-black-1;
+        }
+        
+    }
+
+    &__items {
+        padding: .5rem 2rem;
+        font-size: 2rem;
+        font-family: "Lora", sans-serif;
+        font-weight: 400;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+
+        
+    }
+
+    
+}
+
+.logo-img {
+    height: 5.5rem;
+    margin-right: auto;
+   
+}

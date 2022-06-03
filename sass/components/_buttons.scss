@@ -1,0 +1,22 @@
+.nav__btn {
+    border: none;
+    outline: none;
+    padding: 0 2rem;
+    border-radius: 50px;
+    font-size: 2rem;
+    cursor: pointer;
+    background: linear-gradient(to left, rgba($color-primary, .6), rgba($color-secondary, .5));
+}
+
+.btn-green {
+    font-size: 1.8rem;
+    border-bottom: 1px $color-primary solid;
+    color: $color-primary;
+
+    &:link, 
+    &:active {
+        
+        text-decoration: none;
+    }
+
+}
