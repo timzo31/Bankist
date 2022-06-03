@@ -25,12 +25,14 @@ h1 {
 }
 
 .heading-3 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
     font-family: "Lora", sans-serif;
     line-height: 1;
+    margin-bottom: 2rem;
 
     &--green {
         color: $color-primary;
+        text-transform: uppercase;
     }
 }
