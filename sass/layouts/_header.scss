@@ -1,6 +1,99 @@
 .header {
     //background-color: rgb(237, 153, 42);
-    grid-column: 2 /span 11;
-    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90px 100vh;
+
+    &__title {
+        grid-column: 1 / -1;
+        padding: 0 3rem 0 3rem;
+        //flex: 1;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        row-gap: 3rem;
+        max-width: 115rem;
+        align-content: center;
+        justify-content: center;
+        align-items: flex-start;
+        justify-items: flex-start;
+    }
+
+    &__img {
+        grid-column: 2 / 3;
+        grid-row: 1 / span 4;
+        width: 100%;
+        transform: translateY(-6rem);
+    }
+}
+
+.btn {
+
+
+    &--text {
+        outline: none;
+        border: none;
+        border-bottom: 1px $color-primary solid;
+        background: none;
+        font-weight: 500;
+        font-family: inherit;
+        color: $color-primary;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.7rem;
+        cursor: pointer;
+        transition: all .3s;
+    }
+
+    &--scroll-to {
+
+    }
+}
+
+
+.nav {
+    background-color: $color-white-1;
+    grid-column: 1 / -1;
+    display: flex;
+    padding: 2rem 5rem 2rem 8rem;
+    //justify-content: space-between;
+
+    &__links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        //margin: ;
+    }
+
+    &__item {
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        font-family: "Lora", sans-serif;
+
+    }
+
+    &__link {
+        text-decoration: none;
+
+        &:link,
+        &:active,
+        &:visited {
+            color: $color-black-1;
+        }
+
+        &--btn {
+            padding: 1rem 2rem;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            background: linear-gradient(to bottom right, 
+                     rgba($color-primary, .8), rgba($color-secondary, .8) ) ;
+        }
+    }
+
+    &__logo {
+        margin-right: auto;
+    }
+
+    
 }
 
