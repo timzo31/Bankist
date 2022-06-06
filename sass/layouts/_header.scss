@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 90px 100vh;
-    border-bottom: 1px solid $color-grey-light;
+    //margin: 0 auto 0 auto;
 
     &__title {
         grid-column: 1 / -1;
@@ -27,7 +27,6 @@
 }
 
 .btn {
-
 
     &--text {
         outline: none;
@@ -84,9 +83,6 @@
 
         &--btn {
             padding: 0 3rem;
-            // border: none;
-            // outline: none;
-           
             background: linear-gradient(to bottom right, 
                      rgba($color-primary, .8), rgba($color-secondary, .8) ) ;
 
@@ -99,7 +95,7 @@
             &:hover,
             &:visited {
                 color: inherit;
-                background-color: $color-black-1;
+                background-color: lighten($color: $color-secondary, $amount: .15);
                 color: $color-black-2;
             }
         }
