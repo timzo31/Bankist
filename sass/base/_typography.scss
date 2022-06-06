@@ -1,46 +1,36 @@
-// .heading-1 {
-//     font-size: 5rem;
-//     font-family: "Lora";
-//     font-weight: 700;
-//     line-height: 1.5;
-//     transform: skewX(-15deg);
-//     margin: $margin-bt-heading;
+
+h1 {
+    font-size: 5.5rem;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.35;
+    
+}
+
+.highlight {
+    position: relative;
+
+    &::after {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        transform: scale(1.07, 1.05) skewX(-15deg);
+        background-color: $color-primary;
+    }
+}
 
 
-//     &__lineargradient-skewed {
-//         padding: 1rem 0;
-//         background: linear-gradient(to bottom, rgba($color-primary, .8), rgba($color-secondary, .8));
-        
-//     }
-// }
-
-// h1 {
-//     transform: skewX(15deg);
-// }
-
-// .heading-2 {
-//     font-size: 4rem;
-//     font-family: "Lora", sans-serif;
-//     font-weight: 500;
-// }
-
-// .heading-3 {
-//     font-size: 2rem;
-//     font-weight: 400;
-//     font-family: "Lora", sans-serif;
-//     line-height: 1;
-//     margin-bottom: 2rem;
-
-//     &--green {
-//         color: $color-primary;
-//         text-transform: uppercase;
-//     }
-// }
 
 h4 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-family: inherit;
     font-weight: 500;
-    word-spacing: 1rem;
-    
+    //word-spacing: 1rem;
+
 }
