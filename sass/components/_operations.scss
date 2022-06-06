@@ -1,3 +1,110 @@
 .operations {
-    
+    background-color: #fff;
+    margin: 12rem auto 0 auto;
+    max-width: 100rem;
+
+    &__tab {
+        margin-right: 2.5rem;
+        transform: translateY(-50%);
+        // Center the tab buttons
+        &-container {
+            background-color: $color-secondary;
+            display: flex;
+            justify-content: center;
+        }
+
+        span {
+            margin-right: 1rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        &--active {
+            transform: translateY(-66%);
+        }
+
+        &--1 {
+            background-color: $color-tertiary;
+        }
+
+        &--2 {
+            background-color: $color-secondary-2;
+        }
+
+        &--3 {
+            background-color: $color-tertiary-2;
+        }
+
+    }
+
+    &__content {
+        display: none;
+        // Presentational
+        font-size: 1.7rem;
+        padding: 2.5rem 7rem 6.5rem 7rem;
+
+        &--active {
+            display: grid;
+            grid-template-columns: 7rem 1fr;
+            column-gap: 3rem;
+            row-gap: .5rem;
+        }
+
+        p {
+            grid-column: 2 / 3;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        &--1 {
+            background-color: rgba($color-tertiary, .2);
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+
+            svg {
+                fill: $color-tertiary;
+                height: 3rem;
+                width: 3rem;
+            }  
+        }
+
+        &--2 {
+            background-color: rgba($color-primary, .2);
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            
+            svg {
+                fill: $color-secondary-2;
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+
+        &--3 {
+            background-color: rgba($color-tertiary-2, .2);
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            svg {
+                fill: $color-tertiary-2;
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+        
+    }
+
+    &__header {
+        font-size: 2.25rem;
+        font-weight: 500;
+        align-self: center;
+    }
+
 }

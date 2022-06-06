@@ -1,29 +1,18 @@
-// .btn {
-//     border: none;
-//     outline: none;
-//     padding: 0 2rem;
-//     border-radius: 50px;
-//     font-size: 2rem;
-//     cursor: pointer;
-// }
+.btn {
+    border: none;
+    outline: none;
+    padding: 1.25rem 4.5rem;
+    border-radius: 10rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    font-family: inherit;
+    transition: all .3s;
 
-// .nav__btn {
-//     background: linear-gradient(to left, rgba($color-primary, .6), rgba($color-secondary, .5));
-// }
-
-// .btn-green {
-//     font-size: 1.8rem;
-//     border-bottom: 1px $color-primary solid;
-//     color: $color-primary;
-
-//     &:link, 
-//     &:active {
+    &:hover {
+        background-color: darken($color: $color-grey-light, $amount: .5);
         
-//         text-decoration: none;
-//     }
+    }
+}
 
-// }
-
-// .tabs {
-
-// }
