@@ -46,26 +46,105 @@ h4 {
   max-width: 100rem;
   margin: 0 auto;
   position: relative;
-  background-color: #4fef33;
   height: 50rem;
   overflow: hidden; }
+  .slider__btn {
+    position: absolute;
+    top: 50%;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 5.5rem;
+    height: 5.5rem;
+    font-size: 3.25rem;
+    font-weight: 700;
+    font-family: inherit;
+    color: #333;
+    cursor: pointer;
+    z-index: 10;
+    background-color: rgba(204, 204, 204, 0.7); }
+    .slider__btn--left {
+      left: 6%;
+      transform: translate(-50%, -50%); }
+    .slider__btn--right {
+      right: 6%;
+      transform: translate(50%, -50%); }
+  .slider .dots {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; }
+    .slider .dots__dot {
+      background-color: #888;
+      opacity: .7;
+      border-radius: 50%;
+      margin-right: 1.75rem;
+      width: 1rem;
+      height: 1rem;
+      cursor: pointer;
+      transition: all .5s;
+      /* Only necessary when overlying images */
+      /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */ }
+      .slider .dots__dot:not(last-child) {
+        margin-right: 1.75rem; }
+      .slider .dots__dot--active {
+        background-color: #ccc;
+        opacity: 1; }
 
 .slide {
   width: 100%;
   height: 50rem;
   position: absolute;
   top: 0;
-  display: flex; }
+  display: flex;
+  /* Only for images that have different size than slide */ }
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
-.testimonial__header {
-  font-size: 2.5rem;
-  font-weight: 500; }
-  .testimonial__header::before {
-    content: '\8220';
+.testimonial {
+  width: 65%;
+  position: relative; }
+  .testimonial::before {
+    content: '\201C';
     display: block;
     position: absolute;
-    top: 0;
-    left: 0; }
+    top: -5.3rem;
+    left: -6.8rem;
+    font-size: 20rem;
+    line-height: 1;
+    z-index: -1;
+    font-family: inherit; }
+  .testimonial__header {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem; }
+  .testimonial__text {
+    font-size: 2.25rem;
+    margin-bottom: 3.5rem;
+    color: #888; }
+  .testimonial__author {
+    margin-left: 3rem;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    column-gap: 2rem; }
+  .testimonial__photo {
+    grid-row: 1 / span 2;
+    width: 6.5rem;
+    border-radius: 50%; }
+  .testimonial__name {
+    font-size: 1.7rem;
+    font-weight: 500;
+    align-self: flex-end;
+    margin: 0; }
+  .testimonial__location {
+    font-size: 1.5rem; }
+
+.section__title--testimonials {
+  margin-bottom: 4rem; }
 
 .section {
   padding: 15rem 3rem;
@@ -153,7 +232,6 @@ h4 {
     margin-right: 2.5rem;
     transform: translateY(-50%); }
     .operations__tab-container {
-      background-color: #056b09;
       display: flex;
       justify-content: center; }
     .operations__tab span {
