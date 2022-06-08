@@ -28,5 +28,14 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+/////////////////////////SMOOTH SCROLLING/////////////////////
+const btnScrollTo = document.querySelector('.btn--scroll-to');
+const section1 = document.querySelector('#section--1');
+
+btnScrollTo.addEventListener('click', (e) => {
+    section1.scrollIntoView({behavior: 'smooth'});
+});
+
+
 
 
