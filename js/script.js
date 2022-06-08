@@ -36,6 +36,19 @@ btnScrollTo.addEventListener('click', (e) => {
     section1.scrollIntoView({behavior: 'smooth'});
 });
 
+/////////////////////TYPES OF EVENTS AND EVENT HANDLERS/////////////////////
+const h1 = document.querySelector('h1');
+
+const alertH1 = (e) => {
+    alert('You are reading the heading.');
+}
+
+h1.addEventListener('mouseenter', alertH1);
+setTimeout(() => {
+    h1.removeEventListener('mouseenter', alertH1)
+}, 3000);
+
+////////////////////////  /////////////////////////////////
 
 
 
