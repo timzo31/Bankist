@@ -64,7 +64,7 @@ document.querySelectorAll('.nav__link').forEach(link => link.addEventListener('c
     //console.log('LINK', e.target, e.currentTarget);
 }));
 
-document.querySelector('.nav__links').addEventListener('click', function(e) {
+/*document.querySelector('.nav__links').addEventListener('click', function(e) {
     this.style.backgroundColor = randomColor();
     console.log('NAV LINKS', e.target, e.currentTarget);
 });
@@ -73,7 +73,7 @@ document.querySelector('.nav').addEventListener('click', function(e) {
     this.style.backgroundColor = randomColor();
     console.log('NAV', e.target, e.currentTarget);
 }, true);
-
+*/
 //////////////////////EVENT DELEGATION - PAGE NAVIGATION SMOOTH SCROLLING///////////////////////
 document.querySelector('.nav__links').addEventListener('click', (e) => {
     e.preventDefault();
@@ -106,10 +106,27 @@ h1.closest('header').style.background = '$color-secondary';
 h1.closest('h1').style.background = '#9f1';
 */
 
-
-
 ///////////////////TABBED COMPONENT/////////////////////////////
+const tabs = document.querySelectorAll('.operations__tab');
+const tabsContainer = document.querySelector('.operations__tab-container');
+const tabsContent = document.querySelectorAll('.operations__content');
 
+tabsContainer.addEventListener('click', function (e) {
+    const clicked = e.target.closest('.operations__tab');
+   // console.log(clicked);
+   // Guard clause
+    if (!clicked) return;
+
+    tabs.forEach(tab => tab.classList.remove('operations__tab--active'));
+    tabsContent.forEach(c => c.classList.remove('operations__content--active'));
+
+    clicked.classList.add('operations__tab--active');
+
+    // activate content area
+    document.querySelector(`.operations__content--${clicked.dataset.tab}`)
+                            .classList.add('operations__content--active');
+   
+})
 
 
 
